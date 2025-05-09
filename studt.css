@@ -1,0 +1,335 @@
+body{
+    margin:0px;
+    padding: 0px;  
+	  font-family:  'Helvetica';
+   
+}
+
+.header {
+  background: linear-gradient(to bottom, #ef9e4d, #ec7f12);
+
+  border-radius: 0 0 0 25px;                  /* header page */
+
+  }
+
+  .header-pic{                              /* header page pic*/
+    width:30px;
+  }
+  
+  #offcanvasMenu{
+
+    background: linear-gradient(to bottom, #ef9e4d, #ec7f12);   /* header page  offcavasmenu background color*/
+
+
+  }
+
+  .offcanvaslogo{                                                    /* header page  offcavaslogo*/
+    width:50px;    
+
+  }
+ 
+
+  .logout{                                                                  /* header page  logout button*/
+     margin-bottom:2rem;
+  }
+ 
+  .container-fluid {
+
+    background: linear-gradient(to bottom, #ef9e4d, #ec7f12);           
+     
+  }
+
+
+.login-logo {
+
+ margin-left:38%;                                              /* login page logo*/
+ 
+}
+
+.input-group .form-control {                                 /* login page  input*/
+    border-left: none;                                              
+}
+.input-group-text {                                           /* login page  text*/
+    background: white;
+    border-right: none;
+}
+.login-button {
+    padding: 10px;                                               /* login page  login button*/
+    border-radius: 25px;  
+    font-size: 16px;
+    border: none;
+}
+
+.terms {
+    font-size: 12px;                                              /* login page  terms*/
+    margin-top: 10px;
+}
+.terms a {
+    text-decoration: none;                                           
+    color: #ff8000;                                                   /* login page  terms*/
+    margin-top: 10px;   
+    font-weight: bold;
+}
+ 
+/* Bounce In Animation for Profile */
+@keyframes bounceIn {
+  0% {
+      transform: scale(0.5);
+      opacity: 0;                                                      /* student profile page profile bounce animation*/
+      margin-top: 10px;
+  }
+  60% {
+      transform: scale(1.1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+/* Slide Up Animation for Profile Card */
+@keyframes slideUp {
+  0% {
+      transform: translateY(50px);                                           /* student profile profile card slideup animation*/
+      margin-top: 10px;
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+.profile-card,.homework-card,.notification-card,.worksheetcard,.classtopper-card,.result-card,.news,.fees,.report,.gk,.chart-card,.thirukural{
+  margin-top: -10px;
+  border-radius: 15px;
+  background: #ffffff;
+  animation: slideUp 1s ease-in;
+  
+}
+
+.header-img{
+  margin-top: 10px;
+  margin-left: 25%;                                                          /* all page  header  gif image*/
+  margin-top: 10px;
+  animation: bounceIn 1s ease-in;
+  border-radius: 15px 50px 30px 5px;
+
+}
+
+.notification-item {
+  background: #e9ecef;
+  padding: 15px;                                                           /*notification page*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px 0;
+  transform: translateX(-100%);
+  animation: slideLeft 0.5s forwards;
+  
+  
+}
+.notification-item:hover{
+   background-color: #f8ca6f;                                          /* notification page*/
+   margin-top: 10px;
+   
+}
+strong{
+  color:#ff8000;                                                              /* notification page*/
+}
+
+.notifi1 { animation-delay: 0.3s; }
+.notifi2 { animation-delay: 0.5s; }                                           /* notification page*/
+.notifi3 { animation-delay: 0.7s; }
+                                                                                  
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);                                     /* notification page animation*/
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.timetable-card,.dicwords-table ,.exam-timetable-card{
+  margin-top: -10px;
+  background: #ffffff;
+  border-radius: 15px;                                                            /* timetable page , dictionary page and exam-timetable-card*/
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: slideUp 1s ease-in;
+  
+}
+.timetable-table {
+  width: 100%;
+  border-radius: 10px;                                                              /* timetable page*/
+  overflow: hidden;
+  
+}
+.timetable-table th, .timetable-table td {                                          /* timetable page*/
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #dee2e6;
+}
+.timetable-table th,.exam-timetable-table th,.dic-table th,.report-table th,.chart-table th{        /* timetable page, exam timetable*/
+  background: linear-gradient(to bottom, #ef9e4d, #ec7f12);
+  color: white;
+  text-transform: uppercase;
+}
+.timetable-table td {
+  font-size: 16px;                                                                      /* timetable page*/
+  font-weight: 500;
+  
+}
+.day-header {                                                                           /* timetable page*/
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .timetable-table th, .timetable-table td {                                            /* timetable page*/
+      padding: 10px;
+      font-size: 14px;
+  }
+}
+
+.chart-title {                                                                        /* chart page*/
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.schooltopper-header.th{                                                            /* school topper page*/
+  background: linear-gradient(to bottom, #ef9e4d, #ec7f12);
+}
+.schooltopper-table{
+  margin-top: -10px;
+  border-radius: 15px;                                                            /* school topper page*/
+  animation: slideUp 1s ease-in;
+}
+
+
+.fees-form{                                                                          
+  background: linear-gradient(to bottom, #ef9e4d, #ec7f12);                      /* fees  page form*/
+  
+}
+.fees-form input {
+  background-color: transparent !important;                                              /* fees  page input*/
+  border: 1px solid #ccc;
+  
+  
+}
+
+.fees-form select {                                                                            
+  background-color: transparent !important;                                            /* fees  page */
+  border: 1px solid #ccc;
+  border: 1px solid #ccc;
+  
+  
+}
+.table-fees th{
+  background: linear-gradient(to bottom, #ef9e4d, #ec7f12);                        /* fees  page  header color*/
+  border: 1px solid #ccc;
+   
+}
+.gallery img {
+  transition: transform 0.3s ease-in-out;                                                /*  gallery page*/
+  border: 1px solid #ccc;
+}
+.gallery img:hover {
+  transform: scale(1.1);                                                            /*  gallery page image hover*/
+}
+
+
+.footer-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, #ef9e4d, #ec7f12);                       /* footer page*/
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 999;
+  
+}
+
+
+.footer-menu .nav-item {                                                                  /* footer page*/
+  text-align: center;
+  flex: 1;
+}
+
+.footer-menu .nav-link {
+  color: #000;
+  font-size: 14px;
+}
+
+.footer-menu .nav-link.active {
+  color: #000;
+}
+
+.footer-menu .nav-link i {
+  display: block;
+  font-size: 20px;
+}
+
+.add-button {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background:#fff ;                                                               /* footer page*/
+  color: #000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 0 0 #ec7f12;
+  }                                                                               /* footer page*/
+  70% {
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 0 0 0 10px rgba(138, 43, 226, 0);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(138, 43, 226, 0);
+  }
+}
+ 
+.kural-text{
+    font-size:0.9em;                    /*  thirukural*/
+}
+.card {
+  border-radius: 1rem;
+}
+.card-title {
+  font-weight: 600;
+}
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-slide-left {
+  animation: slideLeft 0.8s ease-out forwards;
+  opacity: 0; /* Initial state */
+}
+.animate-delay-1 { animation-delay: 0.2s; }
+.animate-delay-2 { animation-delay: 0.4s; }
+.animate-delay-3 { animation-delay: 0.6s; }
+.animate-delay-4 { animation-delay: 0.8s; }
